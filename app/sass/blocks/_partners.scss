@@ -1,0 +1,98 @@
+.partners {
+  &__desktop {
+    display: none;
+  }
+  &__img-tablet {
+    display: none;
+  }
+  &__text {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: $dark-blue;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  &__img {
+    text-align: center;
+    width: 100%;
+  }
+  &__img--blue {
+    background: $blue-dark-back;
+    padding: 34px 0;
+  }
+  &__img--green {
+    background: $green-dark-back;
+    padding: 42px 0;
+  }
+  &__img--yellow {
+    background: $yellow-back;
+    padding: 36px 0;
+  }
+  &__img--purple {
+    background: $purple-back;
+    padding: 37px 0;
+  }
+  &__img--orange {
+    background: $orange-back;
+    padding: 36px 0;
+  }
+  &__img--grey {
+    background: $grey-back;
+    padding: 34px 0;
+  }
+  &__img--red{
+    background: $red-back;
+    padding: 28px 0;
+  }
+  &__img--white {
+    background: $white-back;
+    padding: 20px 0;
+  }
+  &__img--beige {
+    background: $beige-back;
+    padding: 28px 0;
+  }
+  &__img--lilac {
+    background: $lilac-back;
+    padding: 39px 0;
+  }
+  &__img--sapphirine {
+    background: $sapphirine-back;
+    padding: 35px 0;
+  }
+  &__img--black {
+    background: $black;
+    padding: 11px 0;
+  }
+  @media screen and (min-width: 768px) {
+    &__desktop {
+      display: block;
+    }
+    &__items {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+    &__img-tablet {
+      display: inline;
+    }
+    &__img-main {
+      display: none;
+    }
+  }
+  @media screen and (min-width: 992px) {
+    &__items{
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+  }
+  @media screen and (min-width: 1440px) {
+    &__img-tablet {
+      display: none;
+    }
+    &__img-main {
+      display: inline;
+    }
+  }
+}

@@ -1,0 +1,124 @@
+.about-team {
+  &__item {
+    background: $back-color;
+    padding-bottom: 30px;
+    border-radius: 12px;
+  }
+  &__item-inset {
+    background: $back-color;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  &__button {
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 60px;
+  }
+  &__button-item:last-child {
+    margin-right: 0;
+  }
+  &__button-item {
+    width: 16px;
+    height: 16px;
+    background: $blue;
+    opacity: 0.2;
+    border: none;
+    border-radius: 16px;
+    margin-right: 12px;
+  }
+  &__img {
+    height: 500px;
+    object-fit: cover;
+    width: 100%;
+    border-radius: 12px 12px 0 0;
+  }
+  &__link-team {
+    background-image: url(../img/Arrow.svg);
+    background-repeat: no-repeat;
+    background-position: right center;
+    padding-right: 12px;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: $blue;
+    margin-top: 24px;
+    margin-bottom: 5px;
+    display: inline-block;
+  }
+  &__text {
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 37px;
+    background: $back-gradient;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    padding-bottom: 30px;
+  }
+  &__active {
+    background: #24A3FF;
+    opacity: 1;
+  }
+  &__text-name {
+    margin-bottom: 4px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    color: $text-color;
+  }
+  &__text-position {
+    font-size: 14px;
+    line-height: 22px;
+    color: $text-color;
+    margin-top: 6px;
+  }
+  &__button-item:hover {
+    background: $blue;
+    opacity: 0.6;
+  }
+  &__p-60 {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  @media screen and (min-width: 768px) {
+    &__text {
+      font-size: 38px;
+      line-height: 46px;
+    }
+    &__p-60 {
+      padding-left: 60px;
+      padding-right: 60px;
+    }
+  }
+  @media screen and (min-width: 992px) {
+    margin-top: 50px;
+    &__item {
+      display: flex;
+      padding-bottom: 0;
+      margin-top: 83px;
+    }
+    &__item-inset {
+      border-radius: 12px;
+    }
+    &__img {
+      border-radius: 12px 0 0 12px;
+      width: 44%;
+      height: 529px;
+    }
+    &__link-team {
+      margin-top: 28px;
+    }
+  }
+  @media screen and (min-width: 1440px) {
+    &__img {
+      height: 340px;
+      width: 97%;
+    }
+    &__item {
+      margin-top: 79px;
+    }
+  }
+}

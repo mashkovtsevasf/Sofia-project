@@ -1,0 +1,194 @@
+.footer {
+  padding-bottom: 30px;
+  background: $back-color;
+  &__inset {
+    display: flex;
+    flex-direction: column;
+    border-top: 2px solid $light-grey-color;
+  }
+  &__p-60 {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  &__inset-second {
+    display: flex;
+    flex-direction: column;
+    border-top: 2px solid $light-grey-color;
+  }
+  &__adress{
+    font-size: 16px;
+    line-height: 20px;
+    color: $adress-color;
+    margin-bottom: 10px;
+    padding-top: 32px;
+    text-decoration: none;
+  }
+  &__tel {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: right;
+    color: $tel-color;
+    text-decoration: none;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  &__email {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    color: $blue;
+    text-decoration: none;
+    margin-bottom: 30px;
+  }
+  &__text-copyright {
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    color: $text-color;
+    text-decoration: none;
+  }
+  &__text-copyright-second {
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    color: $text-color;
+    text-decoration: none;
+  }
+  &__link-map {
+    margin-bottom: 21px;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 15px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: $blue;
+    text-decoration: none;
+  }
+  &__adress-box {
+    align-items: center;
+    flex-direction: column;
+    display: flex;
+  }
+  &__contact {
+    align-items: center;
+    flex-direction: column;
+    display: flex;
+  }
+  &__social:hover svg path {
+    fill: $focus-hover-color;
+  }
+  &__tel:hover {
+    color: $tel-hover-color;
+  }
+  @media screen and (min-width: 768px) {
+    &__p-60 {
+      padding-left: 60px;
+      padding-right: 60px;
+    }
+    &__inset {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      padding-top: 29px;
+    }
+    &__inset-second {
+      align-items: center;
+      padding-top: 33px;
+    }
+    &__info {
+      display: flex;
+      flex-direction: column;
+      grid-row: 1;
+      grid-column: 1 / 4;
+    }
+    &__adress-box {
+      display: flex;
+      flex-direction: row;
+      padding-bottom: 21px;
+    }
+    &__contact {
+      display: flex;
+      align-items: center;
+      flex-direction: row;
+      padding-bottom: 30px;
+    }
+    &__adress {
+      padding-top: 0;
+      margin-bottom: 0;
+      padding-right: 23px;
+    }
+    &__link-map {
+      margin-bottom: 0;
+      padding-bottom: 2px;
+      position: relative;
+    }
+    &__tel {
+      margin-top: 0;
+      margin-bottom: 0;
+      position: relative;
+      margin-left: 26px;
+    }
+    &__email {
+      margin-bottom: 0;
+      padding-left: 26px;
+    }
+    &__text-copyright {
+      grid-row: 1;
+      grid-column: 3 / 5;
+      margin-left: 48px;
+    }
+    &__tel::after {
+      content: '';
+      display: inline-block;
+      position: absolute;
+      bottom: 9px;
+      border-radius: 6px;
+      width: 6px;
+      height: 6px;
+      background: $text-color;
+      right: -15px;
+    }
+    &__tel::before {
+      content: '';
+      display: inline-block;
+      position: absolute;
+      bottom: 9px;
+      border-radius: 6px;
+      width: 6px;
+      height: 6px;
+      background: $text-color;
+      left: -15px;
+    }
+    &__link-map::before {
+      content: '';
+      display: inline-block;
+      position: absolute;
+      bottom: 9px;
+      border-radius: 6px;
+      width: 6px;
+      height: 6px;
+      background: $text-color;
+      left: -15px;
+    }
+  }
+  @media screen and (min-width: 992px) {
+    &__inset-second {
+      flex-direction: row;
+      justify-content: space-between;
+      padding-top: 30px;
+    }
+    &__text-copyright {
+      justify-self: end;
+    }
+    &__text-copyright-second {
+      align-self: flex-start;
+    }
+    &__box--p-60 {
+      padding-left: 60px;
+      padding-right: 60px;
+    }
+    &__contact {
+      padding-bottom: 0;
+    }
+  }
+}

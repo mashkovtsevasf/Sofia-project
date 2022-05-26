@@ -1,0 +1,206 @@
+.main-second {
+  padding-top: 136px;
+  &__team {
+    position: relative;
+    margin-top: 30px;
+  }
+  &__desktop {
+    display: none;
+  }
+  &__team-heading {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 44px;
+    text-align: center;
+    letter-spacing: 13px;
+    text-transform: uppercase;
+    color: $white;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  &__team-title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 44px;
+    text-align: center;
+    letter-spacing: 13px;
+    margin-right: -13px;
+    text-transform: uppercase;
+    color: $white;
+    align-self: center;
+    text-shadow: 0px 15px 30px rgba(40, 40, 86, 0.8);
+  }
+  &__text-clients {
+    padding-top: 24px;
+  }
+  &__text-clients-inset {
+    font-size: 19px;
+    line-height: 30px;
+    color: $black;
+    padding-bottom: 20px;
+  }
+  &__clients-title {
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 37px;
+    background: $back-gradient;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    padding-bottom: 60px;
+    padding-top: 9px;
+  }
+  &__achievements {
+    background: $back-color;
+    padding-left: 46px;
+    padding-right: 46px;
+    display: flex;
+    flex-direction: column;
+  }
+  &__achievements-title {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: $adress-color;
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  &__achievements-item {
+    padding-top: 25px;
+    padding-bottom: 25px;
+  }
+  &__achievements-items {
+    height: 90px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+    background: $white;
+    border-radius: 12px;
+  }
+  &__button-item {
+      width: 16px;
+      height: 16px;
+      background: $blue;
+      opacity: 0.2;
+      border: none;
+      border-radius: 16px;
+      margin-right: 10px;
+  }
+  &__button {
+    padding-left: 12px;
+    text-align: center;
+    margin-bottom: 25px;
+  }
+  &__achievements-items-desktop {
+    display: none;
+  }
+  &__button-item:hover {
+    background: $blue;
+    opacity: 0.6;
+  }
+  &__button-item:focus {
+    background: $blue;
+    opacity: 1;
+  }
+  &__active {
+    background: $blue;
+    opacity: 1;
+  }
+  @media screen and (min-width: 768px) {
+    padding-top: 245px;
+    &__team-title {
+      font-size: 46px;
+      line-height: 56px;
+      letter-spacing: 63px;
+      margin-right: -63px;
+    }
+    &__clients-title {
+      font-size: 38px;
+      line-height: 46px;
+    }
+    &__p-60 {
+      padding-left: 60px;
+      padding-right: 60px;
+    }
+    &__text-clients {
+      padding-top: 61px;
+    }
+    &__team {
+      margin-top: 60px;
+    }
+    &__button-item--unvisinle {
+      display: none;
+    }
+    &__achievements-items-inset {
+      display: flex;
+      justify-content: space-between;
+    }
+    &__achievements-items {
+      margin-bottom: 30px;
+      margin-right: 40px;
+      width: 25%;
+    }
+    &__achievements-items-desktop {
+      height: 90px;
+      margin-bottom: 30px;
+      margin-right: 40px;
+      width: 25%;
+      background: $white;
+      display: flex;
+      border-radius: 12px;
+      justify-content: center;
+    }
+    &__achievements-items-desktop:last-child {
+      margin-right: 0;
+    }
+  }
+  @media screen and (min-width: 992px) {
+    padding-top: 138px;
+    &__team-title {
+      font-size: 86px;
+      line-height: 105px;
+    }
+    &__clients-title {
+      padding-top: 4px;
+    }
+    &__team {
+      margin-top: 33px;
+    }
+    &__achievements-items {
+      height: 110px;
+    }
+    &__achievements-items-desktop {
+      height: 110px;
+    }
+    &__text-clients {
+      display: flex;
+      padding-bottom: 40px;
+      padding-top: 54px;
+    }
+    &__text-clients-full {
+      width: 116%;
+      margin-right: 60px;
+    }
+  }
+  @media screen and (min-width: 1440px) {
+    &__team-title {
+      font-size: 96px;
+      line-height: 117px;
+    }
+    &__achievements-title {
+      padding-top: 32px;
+    }
+    &__clients-title {
+      padding-right: 74px;
+    }
+    &__text-clients-full {
+      width: 106%;
+      padding-left: 120px;
+    }
+  }
+}

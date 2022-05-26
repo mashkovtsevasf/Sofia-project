@@ -1,0 +1,228 @@
+.main {
+  &__p-60 {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  &__top {
+  background-image: url(../img/background-img.svg);
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: cover;
+  }
+  &__inset-info {
+    background-color: $fallback;
+    background-image: $main-gradient;
+    border-radius: 0px 0px 12px 12px;
+  }
+  &__title-text {
+    padding-top: 234px;
+    font-weight: 700;
+    font-size: 38px;
+    line-height: 46px;
+    text-align: center;
+    color: $white;
+    margin-bottom: 159px;
+  }
+  &__bottom-scroll {
+    text-align: center;
+    display: block;
+    padding-bottom: 26px;
+  }
+  &__scroll-item{
+    font-weight: 700;
+    font-size: 31px;
+    line-height: 46px;
+    color: $text-color;
+    background: none;
+    border: none;
+    white-space: nowrap;
+    margin-right: 23px;
+    padding: 0;
+  }
+  &__scroll {
+    display: flex;
+    overflow-x: scroll;
+    &::-webkit-scrollbar {
+      display: none;
+    }
+    padding-left: 29px;
+    padding-top: 24px;
+  }
+  &__idea-title {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    color: $white;
+    margin-top: 30px;
+    padding-top: 30px;
+    border-top: 4px solid $dark-grey;
+  }
+  &__idea-text {
+    font-size: 19px;
+    line-height: 30px;
+    color: $white;
+    margin-top: 30px;
+  }
+  &__scroll-sign:hover circle{
+    stroke: $focus-hover-color;
+  }
+  &__scroll-sign:hover path{
+    stroke: $focus-hover-color;
+  }
+  &__scroll-item:focus {
+    background: $back-gradient;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+  &__abt-dignity {
+    padding-top: 26px;
+    position: relative;
+  }
+  &__scroll-item-active {
+    background: $back-gradient-text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+  @media screen and (min-width: 480px) {
+    &__top {
+      background-size: contain;
+    }
+  }
+  @media screen and (min-width: 768px) {
+    &__top {
+      background-size: cover;
+    }
+    &__p-60 {
+      padding-left: 60px;
+      padding-right: 60px;
+    }
+    &__scroll {
+      padding-left: 62px;
+      padding-top: 61px;
+      padding-bottom: 32px;
+    }
+    &__scroll-item {
+      margin-right: 31px;
+      font-size: 38px;
+    }
+    &__br {
+      display: none;
+    }
+    &__title-text {
+      padding-top: 486px;
+      margin-bottom: 417px;
+    }
+    &__idea-title {
+      padding-top: 67px;
+      font-size: 30px;
+    }
+    &__idea-text {
+      margin-bottom: 37px;
+    }
+  }
+  @media screen and (min-width: 890px) {
+    &__top {
+      background-size: contain;
+    }
+  }
+  @media screen and (min-width: 992px) {
+    &__title-text {
+      padding-top: 366px;
+      margin-bottom: 286px;
+    }
+    &__abt-dignity {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      padding-top: 0;
+    }
+    &__scroll {
+      border-bottom: none;
+      border-right: 4px solid $dark-grey;
+      flex-direction: column;
+      padding-right: 60px;
+      align-items: flex-end;
+      padding-bottom: 0;
+      overflow-x: scroll;
+      width: 49%;
+      padding-left: 60px;
+      padding-top: 0;
+    }
+    &__scroll-item {
+      padding: 0;
+      margin-right: 0;
+      margin-bottom: 30px;
+    }
+    &__scroll-item:last-child {
+      margin-bottom: 0;
+      padding-bottom: 18px;
+    }
+    &__scroll-item:first-child {
+      padding-top: 15px;
+    }
+    &__idea-serv {
+      padding-left: 60px;
+      width: 51%;
+    }
+    &__idea-text {
+      margin-bottom: 0;
+    }
+    &__idea-title {
+      margin-top: 0;
+      border: none;
+      padding-top: 13px;
+      line-height: 36px;
+    }
+    &__link-services {
+      margin-top: 60px;
+    }
+    &__scroll-description {
+      display: flex;
+      padding-top: 60px;
+    }
+  }
+  @media screen and (min-width: 1440px) {
+    &__title-text {
+      padding-top: 378px;
+      margin-bottom: 304px;
+    }
+    &__top {
+      background-size: 697px;
+    }
+    &__scroll-description {
+      padding-left: 180px;
+      padding-right: 180px;
+    }
+    &__idea-serv {
+      width: 70%;
+      padding-right: 0;
+    }
+    &__scroll {
+      width: 47%;
+    }
+    &__idea-title {
+      padding-top: 43px;
+    }
+  }
+}
+.main__abt-dignity::after {
+  content: '';
+  height: 10px;
+  background: $shadow-dark;
+  position: absolute;
+  left: 20px;
+  right: 20px;
+  bottom: -10px;
+  border-radius: 0px 0px 12px 12px;
+}
+.main__abt-dignity::before {
+  content: '';
+  height: 10px;
+  background: $shadow-light;
+  position: absolute;
+  left: 40px;
+  right: 40px;
+  bottom: -20px;
+  border-radius: 0px 0px 12px 12px;
+}
